@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="card">
+        <img src="images/profile.jpg" alt="Profile Picture" data-testid="profilePicture">
+        <h2 data-testid="fullName">Kehinde Adebari</h2>
+        <h4 data-testid="jobTitle">Frontend Developer</h4>
+        <p data-testid="shortBio">I am Graphics Designer and frontend developer who is passionate about building and designing user interfaces for websites and applications using HTML, CSS, and JavaScript. I ensure responsiveness, accessibility, and interactivity, enhancing user experience. I currently reside Lagos, Nigeria. Do feel free to check out my work on Github and my other social media which is linked down below. If you want kindly reach via email.</p>
+        <p data-testid="currentLocation">Lagos, Nigeria</p>
+        <p data-testid="emailAddress">adebarikehinde588@gmail.com</p>
+        <div data-testid="socialLinks">
+            <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+            <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
+        </div>
+        <p data-testid="currentTimeUTC" id="utcTime">20:01</p>
+    </div>
+
+    <script>
+        function updateUTCTime() {
+            const utcTimeElement = document.getElementById("utcTime");
+            const now = new Date();
+            utcTimeElement.textContent = "UTC Time: " + now.toUTCString();
+        }
+        setInterval(updateUTCTime, 1000);
+        updateUTCTime();
+    </script>
+</body>
+</html>
