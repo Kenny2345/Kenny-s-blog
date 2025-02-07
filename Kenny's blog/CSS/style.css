@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color:rgb(245, 137, 4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline;
+    line-height: 70px;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 120px;
+    line-height: 1.7;
+    text-align: justify;
+    max-width: px;
+}
+
+.hero {
+    text-align: center;
+    padding: 150px;
+    background-image: url('../images/pic.png');
+    background-position: center ;
+    background-size: 100% auto;
+    color: whitesmoke;
+}
